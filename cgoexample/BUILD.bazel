@@ -1,0 +1,15 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "cgoexample_lib",
+    srcs = ["cgoexample.go"],
+    cgo = True,
+    importpath = "github.com/evanj/rulesgotest/cgoexample",
+    visibility = ["//visibility:private"],
+)
+
+go_binary(
+    name = "cgoexample",
+    embed = [":cgoexample_lib"],
+    visibility = ["//visibility:public"],
+)

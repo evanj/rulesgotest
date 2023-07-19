@@ -12,3 +12,10 @@ go_binary(
     embed = [":hello_lib"],
     visibility = ["//visibility:public"],
 )
+
+go_binary(
+    name = "hello_pure",
+    embed = [":hello_lib"],
+    pure = "on",
+    visibility = ["//visibility:public"],
+)
