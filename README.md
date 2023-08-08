@@ -2,6 +2,8 @@
 
 This is an example project that uses rules_go and uses hermetic_cc_toolchain for cross-compilation. This is currently beiing used to test a Go 1.21 related bug.
 
+`cgoexample_asm`: Demonstrates a bug in `rules_go`, where it uses Go's assembler instead of the C compiler for CGO_ENABLED=1 targets. I think it is this bug: https://github.com/bazelbuild/rules_go/issues/3411
+
 
 ## Works
 

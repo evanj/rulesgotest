@@ -1,0 +1,6 @@
+#ifndef __COGEXAMPLE_ASM_MACROS_H
+#define __COGEXAMPLE_ASM_MACROS_H
+
+#define EXAMPLE_C_DEFINE 1
+
+#endif
