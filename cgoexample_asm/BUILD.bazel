@@ -3,6 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "cgoexample_asm_lib",
     srcs = [
+        "asm_amd64.S",
         "asm_arm64.S",
         "asm_macros.h",
         "cfunc.c",

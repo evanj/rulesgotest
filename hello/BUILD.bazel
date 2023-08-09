@@ -19,3 +19,27 @@ go_binary(
     pure = "on",
     visibility = ["//visibility:public"],
 )
+
+go_binary(
+    name = "hello_arm64",
+    embed = [":hello_lib"],
+    goarch = "arm64",
+    goos = "linux",
+    visibility = ["//visibility:public"],
+)
+
+go_binary(
+    name = "hello_ppc64",
+    embed = [":hello_lib"],
+    goarch = "ppc64",
+    goos = "linux",
+    visibility = ["//visibility:public"],
+)
+
+go_binary(
+    name = "hello_ppc64le",
+    embed = [":hello_lib"],
+    goarch = "ppc64le",
+    goos = "linux",
+    visibility = ["//visibility:public"],
+)
